@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发现 - 小木匣</title>
+    <link rel="shortcut icon" href="resources/pictures/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/discover.css">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/toggle-mode.css">
+
+</head>
+<body>
+    <!-- 导航栏部分 -->
+    <div id="nav" class="border">
+        <a class="MainIcon" href="index.html">小木匣</a>
+        <a class="MainIcon" href="discover.html">发现</a>
+        <a class="MainIcon" href="anykinds.html">分类</a>
+        <a class="MainIcon" href="plant.html">星球</a>
+        <a class="MainIcon" href="about.html">关于</a>
+        <a class="MainIcon" href="login.html">登录</a>
+        <a class="MainIcon" href="profile.html">个人中心</a>
+        <a class="MainIcon" href="settings.html">设置</a>
+        <button id="toggle-mode">颜色模式切换</button>
+    </div>
+
+    <!-- 发现页面内容 -->
+    <div class="discover-container">
+        <h1>发现创意和灵感</h1>
+        <div class="discover-section">
+            <h2>最新分享</h2>
+            <div class="card">
+                <img src="resources/pictures/IndexBackground.jpg" alt="飞行日记">
+                <div class="card-content">
+                    <h3>飞行日记</h3>
+                    <p>飞跃在万米高空，感受蓝天之美。</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/pictures/discover-card2.jpg" alt="快乐时光">
+                <div class="card-content">
+                    <h3>快乐时光</h3>
+                    <p>时光如白驹过隙，转瞬即逝。回首过去，岁月的长河中，很多美好的回忆浮现眼前。珍惜当下，感受每一天的美好，将美好时光珍藏心中。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="discover-section">
+            <h2>发现更多</h2>
+            <ul>
+                <li><a id="a" class="discover-list" href="index.html">小木匣</a></li>
+                <li><a id="a" class="discover-list" href="discover.html">发现</a></li>
+                <li><a id="a" class="discover-list" href="about.html">关于</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页脚部分，版权声明 -->
+    <div id="footer" class="border">
+        <p>©2024 小木匣</p>
+    </div>
+    <script src="resources/javaScripts/toggle-mode.js"></script>
+</body>
+</html>

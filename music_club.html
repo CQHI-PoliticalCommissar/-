@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="小木匣, 创意空间, 古诗晋级赛, 谜语空间, 共享书架, 小世界">
+    <meta name="description" content="小木匣是一个创意空间，你可以在这里发现、分享、创作、交流、记录你的想法。">
+    <title>小木匣——音乐俱乐部</title>
+    <link rel="shortcut icon" href="resources/pictures/music.drawio.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/toggle-mode.css">
+    <style>
+        #music-club-content{
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            padding: 15px;
+            margin-top: 25px;
+            margin-bottom: 40px;
+            background-image: url("resources/pictures/music-club-bg.jpg");
+            background-size: cover;
+
+            border-top-width: 10px;
+            border-left-width: 10px;
+            border-bottom-width: 10px;
+            border-right-width: 10px;
+
+            border-color: orange red yellowgreen blue;
+            border-style: solid;
+
+            font-size: 20px;
+            color: azure;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 5px 5px 8px #00000090;
+        }
+        audio{
+            margin-top: 15px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        .music-list{
+            display: grid;
+            grid-template-columns: 350px;
+            grid-template-rows: auto;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <!-- 导航栏部分 -->
+        <div id="nav" class="border">
+            <div>
+                <div>
+                    <!-- 网站logo图片 -->
+                    <img id="logo" src="resources/pictures/icon.png" alt="小木匣——一个温馨的小世界">
+                </div>
+                <div>
+                    <!-- 主导航链接 -->
+                    <a class="MainIcon" href="index.html">小木匣</a>
+                    <a class="MainIcon" href="discover.html">发现</a>
+                    <a class="MainIcon" href="anykinds.html">分类</a>
+                    <a class="MainIcon" href="plant.html">星球</a>
+                </div>
+            </div>
+            <!-- 搜索栏 -->
+            <form action="index.html" method="get">
+                <input type="text" placeholder="搜索你需要的东西..." name="q" aria-label="找到你需要的东西">
+                <button type="submit" id="search-btn">搜索</button>
+            </form>
+
+            <div>
+                <!-- 额外导航链接 -->
+                <a class="MainIcon" href="about.html">关于</a>
+                <a class="MainIcon" href="login.html">登录</a>
+                <a class="MainIcon" href="profile.html">个人中心</a>
+                <a class="MainIcon" href="settings.html">设置</a>
+                <button id="toggle-mode">颜色模式切换</button>
+            </div>
+        </div>
+ 
+        <!-- 主体内容部分 -->
+        <div id="music-club-content">
+
+            <h1>音乐俱乐部</h1>
+            <br>
+            <p style="font-size: 20px;">欢迎来到小木匣音乐俱乐部，这里是一群热爱音乐的朋友们的乐园，一起分享、交流、创作、记录你的音乐之旅吧！</p>
+            <br>
+            <h2>音乐列表</h2>
+            <br>
+            <div class="music-list">
+                <h3>Sample This（小鱼拖地）</h3>
+                <audio id="background-music" controls>
+                    <source src="resources/musics/backgroundmusic.mp3" type="audio/mpeg">
+                    <source src="resources/musics/backgroundmusic.ogg" type="audio/ogg">
+                    您的浏览器不支持播放音频标签。
+                </audio>
+                <h3>Faded - Alan Walker</h3>
+                    <audio controls>
+                        <source src="resources/musics/Alan Walker - Faded.mp3" type="audio/mpeg">
+                        <source src="resources/musics/Alan Walker - Faded.ogg" type="audio/ogg">
+                    您的浏览器不支持播放音频标签。
+                    </audio>
+                    <h3>Dream It Possible - Delacey</h3>
+                    <audio controls>
+                        <source src="resources/musics/Delacey-Dream It Possible.mp3" type="audio/mpeg">
+                        <source src="resources/musics/Delacey-Dream It Possible.ogg" type="audio/ogg">
+                        您的浏览器不支持播放音频标签。
+                    </audio>
+                <h3>终会与你同行-白挺</h3>
+                <audio controls>
+                    <source src="resources/musics/终会与你同行-白挺.mp3" type="audio/mpeg">
+                    <source src="resources/musics/终会与你同行-白挺.ogg" type="audio/ogg">
+                    您的浏览器不支持播放音频标签。
+                </audio>
+                <h3>初心依然 - 洛天依，初音未来</h3>
+                <audio controls>
+                    <source src="resources/musics/初心依然.mp3" type="audio/mpeg">
+                    <source src="resources/musics/初心依然.ogg" type="audio/ogg">
+                    您的浏览器不支持播放音频标签。
+                </audio>
+            </div>
+        </div>
+
+    <!-- 页脚部分，版权声明 -->
+    <div id="footer" class="border">
+        <p>©2024 小木匣</p>
+    </div>
+
+    <!-- 脚本部分 -->
+        <script src="resources/javaScripts/toggle-mode.js"></script>
+</body>
+</html>

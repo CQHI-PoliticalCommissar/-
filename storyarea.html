@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小木匣 - 梦幻故事屋</title>
+    <link rel="shortcut icon" href="resources/pictures/favicon.ico">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/toggle-mode.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: black;
+        }
+        header {
+            text-align: center;
+            background: #f4f4f4;
+            padding: 20px 0;
+            border-bottom: 2px solid #ccc;
+            color: black;
+        }
+        header h1 {
+            margin: 0;
+            color: black;
+        }
+        nav {
+            margin: 20px 0;
+            color: black;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            background: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 8 8 10px rgba(0, 0, 0, 0.5);
+            color: black;
+        }
+        section h2 {
+            margin-top: 0;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <!-- 导航栏部分 -->
+        <div id="nav" class="border">
+            <div>
+                <div>
+                    <!-- 网站logo图片 -->
+                    <img id="logo" src="resources/pictures/icon.png" alt="小木匣——一个温馨的小世界">
+                </div>
+                <div>
+                    <!-- 主导航链接 -->
+                    <a class="MainIcon" href="index.html">小木匣</a>
+                    <a class="MainIcon" href="discover.html">发现</a>
+                    <a class="MainIcon" href="anykinds.html">分类</a>
+                    <a class="MainIcon" href="planet.html">星球</a>
+                </div>
+            </div>
+            <!-- 搜索栏 -->
+            <form action="index.html" method="get">
+                <input type="text" placeholder="搜索你需要的东西..." name="q" aria-label="找到你需要的东西">
+                <button type="submit" id="search-btn">搜索</button>
+            </form>
+
+            <div>
+                <!-- 额外导航链接 -->
+                <a class="MainIcon" href="about.html">关于</a>
+                <a class="MainIcon" href="login.html">登录</a>
+                <a class="MainIcon" href="profile.html">个人中心</a>
+                <a class="MainIcon" href="settings.html">设置</a>
+                <button id="toggle-mode">颜色模式切换</button>
+            </div>
+        </div>
+    </div>
+    <div class="storyareaborder">
+        <header>
+            <h1>梦幻故事屋</h1>
+            <p>欢迎来到梦幻故事屋，这里是一个充满魔力和冒险的地方。</p>
+        </header>
+
+        <nav>
+            <a href="#fantasy">奇幻冒险</a>
+            <a href="#sci-fi">科幻未来</a>
+            <a href="#history">历史传奇</a>
+            <a href="#fairy-tale">温馨童话</a>
+            <a href="#thriller">惊悚悬疑</a>
+        </nav>
+
+        <section id="fantasy">
+            <h2>奇幻冒险</h2>
+            <p>探索神秘的魔法世界和壮丽的异界景观。</p>
+            <h3>龙之谷探秘</h3>
+            <p>从前，在一片神秘的森林深处，有一个传说中的龙之谷。传说中，那里栖息着一条拥有无限智慧和力量的古老巨龙。年轻的冒险家艾莉亚从小就梦想着找到这个谷地，揭开巨龙的秘密。一天，她终于出发了，携带着她祖父留下的一张古老地图。</p>
+            <p>穿越茂密的森林和险峻的山谷，艾莉亚遇到了各种神奇的生物和危险。最终，她在一片宁静的湖泊前停下，湖中倒映着一座古老的石门。凭着直觉和勇气，艾莉亚解开了石门的魔法，进入了龙之谷。她发现，这并不是一个栖息恐惧的地方，而是一个充满智慧和光明的圣地。通过与巨龙的对话，艾莉亚得到了前所未有的知识和力量，最终成为了一个真正的守护者，守护着这个神秘的世界。</p>
+        </section>
+
+        <section id="sci-fi">
+            <h2>科幻未来</h2>
+            <p>瞭望未来的科技奇迹和宇宙之谜。</p>
+            <h3>星际航行</h3>
+            <p>公元2235年，地球的资源已经枯竭，人类不得不寻找新的栖息地。由顶尖科学家组建的星际探险队——启明星小队，承担了这项艰巨的任务。</p>
+            <p>在一次航行中，他们探测到了一个宜居的星球——伽马星。然而，伽马星并不像看起来那么平静。探险队的船长丽莎在一次巡逻中发现了星球上的古老遗迹，遗迹中暗藏着一组崭新的文明足迹和护卫机器人的踪影。</p>
+            <p>通过与星球上的智能生物沟通，丽莎了解到，伽马星的原住民曾经历过一场毁灭性的战争。这些机器人守护者是为了保护星球而存在的，并且已经失去了控制。</p>
+            <p>经过艰难的战斗和智慧的博弈，启明星小队最终成功解开了机器人的控制系统，并与原住民建立了友好的联系。地球人类终于找到了新的家园，同时也为未来的星际探索开辟了新的希望。</p>
+        </section>
+
+        <section id="history">
+            <h2>历史传奇</h2>
+            <p>回顾那些被遗忘的英雄和古老的传说。</p>
+            <h3>大漠孤烟</h3>
+            <p>大漠孤烟直，长河落日圆。这句诗曾描述过西域的壮丽景象。然而，在那片广袤的沙漠中，隐藏着一个不为人知的传奇。</p>
+            <p>相传在唐代，有一位名叫李安的将军，他率领着一支精锐部队沿着丝绸之路保护商队。一次，他们遭遇了一伙强盗，将军与其部下拼死奋战，最终击退了强敌。然而，过程中，他们意外发现了一座被风沙掩埋的古城遗址。</p>
+            <p>这座古城不仅保存完好，而且其中隐藏着许多珍宝和文物。根据古城中的石碑记载，这里曾是一个繁荣的贸易中心，但因为一场诅咒般的沙尘暴，整个城市被淹没在黄沙之中。</p>
+            <p>将军和他的部下决定保护这个发现，并向朝廷汇报。经过一系列的考察和修复，这座古城重新浮现在世人眼前，成为了学者们研究的宝库。李安将军也因此受到皇帝的嘉奖，成为了一代忠勇贤良的典范。</p>
+            <p>今日，当我们站在这片土地上，仍能感受到千年前的气息。大漠孤烟直的背后，不仅有壮丽的景色，还有那些永不被历史尘封的英雄传说。</p>
+        </section>
+
+        <section id="fairy-tale">
+            <h2>温馨童话</h2>
+            <p>适合孩子们的温暖故事，感受纯真的快乐。</p>
+            <h3>小兔子的奇妙花园</h3>
+            <p>在一片宁静的森林深处，住着一只叫琪琪的小兔子。琪琪性格活泼，喜欢冒险，但她最喜欢的还是她的那片奇妙花园。</p>
+            <p>这片花园并不大，但却充满了各种神奇的植物和花卉。这些植物不仅色彩斑斓，还会唱歌跳舞。每当琪琪感到难过或寂寞，她就会来到花园，与这些植物一起度过美好时光。</p>
+            <p>有一天，森林里来了一只迷路的小狐狸，小狐狸叫菲菲，看上去非常疲惫。琪琪看到后，毫不犹豫地邀请菲菲到她的花园里休息。菲菲惊讶地发现，这片花园里不但有美丽的花朵，还有甜美的歌声和舞蹈，顿时感到心情舒畅，忘记了疲惫。</p>
+            <p>琪琪和菲菲很快成了好朋友，每天一起在花园里玩耍。他们的友谊传遍了整个森林，其他小动物们也纷纷前来参观奇妙花园。琪琪用她的善良和热情，让整个森林变得更加温馨和谐。</p>
+            <p>这个故事告诉我们，友谊和善良就像那片奇妙花园，可以让我们的生活变得更加美好和充满希望。无论遇到什么困难，只要有朋友的陪伴和关爱，一切都会变得更加美好。</p>
+        </section>
+
+        <section id="thriller">
+            <h2>惊悚悬疑</h2>
+            <p>感受背后一阵凉意的悬疑故事，让你欲罢不能。</p>
+            <h3>午夜图书馆的秘密</h3>
+            <p>在城市的边缘，有一座古老的图书馆，被称为“午夜图书馆”。传说，每到午夜，这座图书馆的书架会自己移动，发出诡异的声音。</p>
+            <p>年轻的大学生阿杰对这一传说充满好奇。一个月黑风高的夜晚，他决定亲自前往探秘。他偷偷潜入图书馆，藏在一排古老的书架后面，等待午夜的到来。</p>
+            <p>钟声敲响午夜十二点，图书馆里顿时变得阴森恐怖。阿杰看到书架真的开始移动，那些书仿佛拥有了生命，自行翻动。他被这一切吓得不知所措，但随即他发现书架中央出现了一条隐秘的楼梯，通往地下。</p>
+            <p>阿杰鼓起勇气，顺着楼梯走下去，发现下面竟然有一间隐藏的古老书房。书房里堆满了写满奇异符号和无名咒语的古书，还有一台布满尘埃的老旧打字机。正当他探索时，突然背后传来了脚步声。</p>
+            <p>阿杰回头一看，一位神秘的老人出现在他面前。老人告诉阿杰，他是图书馆的守护者，这些书籍记载着无数古老的秘密和魔法，只有那些真正渴望知识并能承受其代价的人才能进入这间书房。</p>
+            <p>老人警告阿杰，如果他继续探索这些书籍，可能会引发未知的危险。阿杰被这一切深深震撼，但他决定留下来研究这些神秘书籍，他知道，这将是一场充满危险和未知的旅程。</p>
+            <p>从那以后，午夜图书馆的传说更加神秘，而阿杰却隐藏了起来，专心研究那些古老的秘密。人们再也没有见过他，但传说中，每当午夜，图书馆仍会传出那诡异的书页翻动声。</p>
+        </section>
+    </div>
+        <!-- 页脚部分，版权声明 -->
+        <div id="footer" class="border">
+            <p>©2024 小木匣</p>
+        </div>
+    
+        <audio id="background-music" autoplay="autoplay" loop>
+            <source src="resources/musics/backgroundmusic.mp3" type="audio/mpeg">
+            <source src="resources/musics/backgroundmusic.ogg" type="audio/ogg">
+                您的浏览器不支持播放音频标签。
+        </audio>
+        <script src="resources/javaScripts/toggle-mode.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小木匣 - 您的位置</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="shortcut icon" href="resources/pictures/favicon.ico">
+    <link rel="stylesheet" href="resources/css/toggle-mode.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- 导航栏部分 -->
+    <div id="nav" class="border">
+        <div>
+            <div>
+                <!-- 网站logo图片 -->
+                <img id="logo" src="resources/pictures/icon.png" alt="小木匣——一个温馨的小世界">
+            </div>
+            <div>
+                <!-- 主导航链接 -->
+                <a class="MainIcon" href="index.html">小木匣</a>
+                <a class="MainIcon" href="discover.html">发现</a>
+                <a class="MainIcon" href="anykinds.html">分类</a>
+                <a class="MainIcon" href="plant.html">星球</a>
+            </div>
+        </div>
+        <!-- 搜索栏 -->
+        <form action="index.html" method="get">
+            <input type="text" placeholder="搜索你需要的东西..." name="q" aria-label="找到你需要的东西">
+            <button type="submit" id="search-btn">搜索</button>
+        </form>
+
+        <div>
+            <!-- 额外导航链接 -->
+            <a class="MainIcon" href="about.html">关于</a>
+            <a class="MainIcon" href="login.html">登录</a>
+            <a class="MainIcon" href="profile.html">个人中心</a>
+            <a class="MainIcon" href="settings.html">设置</a>
+            <button id="toggle-mode">颜色模式切换</button>
+        </div>
+    </div>
+    <h1 id="geo-nav-h1">地理老师专用找茬器</h1>
+    <div id="geo-nav">
+        <p>Ваше текущее расположение туалета:<span id="user-location">Получается...</span></p>
+    </div>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                document.getElementById("user-location").innerHTML = "Браузер не хочет определять туалет, в котором вы находитесь.";
+            }
+        }
+
+        function showPosition(position) {
+            document.getElementById("user-location").innerHTML = "纬度: " + position.coords.latitude + ", 经度: " + position.coords.longitude;
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById("user-location").innerHTML = "Пользователь был в туалете, когда Хати, отказался предоставить информацию о местоположении.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById("user-location").innerHTML = "Информация о местоположении превратилась в шлак.";
+                    break;
+                case error.TIMEOUT:
+                    document.getElementById("user-location").innerHTML = "Местоположение было приобретено более 114514 лет.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    document.getElementById("user-location").innerHTML = "Произошла ошибка, которую я не сделал.";
+                    break;
+            }
+        }
+
+        getLocation();
+    </script>
+        <!-- 页脚部分，版权声明 -->
+        <div id="footer" class="border">
+            <p>©2024 小木匣</p>
+        </div>
+        <script src="resources/javaScripts/toggle-mode.js"></script>
+</body>
+</html>

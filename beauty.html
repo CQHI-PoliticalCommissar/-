@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="小木匣, 创意空间, 古诗晋级赛, 谜语空间, 共享书架, 小世界">
+    <meta name="description" content="小木匣是一个创意空间，你可以在这里发现、分享、创作、交流、记录你的想法。">
+    <title>小木匣——一个温馨的小世界</title>
+    <link rel="shortcut icon" href="resources/pictures/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/toggle-mode.css">
+</head>
+<body>
+    <div> 
+        <!-- 导航栏部分 -->
+        <div id="nav" class="border">
+            <div>
+                <div>
+                    <!-- 网站logo图片 -->
+                    <img id="logo" src="resources/pictures/icon.png" alt="小木匣——一个温馨的小世界">
+                </div>
+                <div>
+                    <!-- 主导航链接 -->
+                    <a class="MainIcon" href="index.html">小木匣</a>
+                    <a class="MainIcon" href="discover.html">发现</a>
+                    <a class="MainIcon" href="anykinds.html">分类</a>
+                    <a class="MainIcon" href="plant.html">星球</a>
+                </div>
+            </div>
+            <!-- 搜索栏 -->
+            <form action="index.html" method="get">
+                <input type="text" placeholder="搜索你需要的东西..." name="q" aria-label="找到你需要的东西">
+                <button type="submit" id="search-btn">搜索</button>
+            </form>
+
+            <div>
+                <!-- 额外导航链接 -->
+                <a class="MainIcon" href="about.html">关于</a>
+                <a class="MainIcon" href="login.html">登录</a>
+                <a class="MainIcon" href="profile.html">个人中心</a>
+                <a class="MainIcon" href="settings.html">设置</a>
+                <button id="toggle-mode">颜色模式切换</button>
+            </div>
+        </div>
+ 
+        <!-- 主页背景部分 -->
+        <div class="IndexBackgroundDiv">
+            <!-- 菜单栏 -->
+            <div id="menu" class="border">
+                <h1 class="menu-your-favorite">猜你喜欢:</h1>
+                <!-- 菜单项列表 -->
+                <ul class="menu-item" >
+                    <li><a href="storyarea.html">故事频道</a></li> 
+                    <li><a href="discover.html">创意空间</a></li> 
+                    <li><a href="poems.html">古诗晋级赛</a></li> 
+                    <li><a href="riddlesarea.html">谜语空间</a></li> 
+                    <li><a href="smallworld.html">小世界</a></li>         
+                </ul>
+            </div>
+            <!-- 背景图片 -->
+            <img id="IndexBackground" src="resources/pictures/category3.jpg" alt="美好">
+        </div>
+    </div>
+
+    <!-- 页脚部分，版权声明 -->
+    <div id="footer" class="border">
+        <p>©2024 小木匣</p>
+    </div>
+    <script src="resources/javaScripts/toggle-mode.js"></script>
+</body>
+</html>

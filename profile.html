@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 小木匣</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/toggle-mode.css">
+    <style>
+        body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+#nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.MainIcon {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a.MainIcon:hover, a.MainIcon.active {
+    text-decoration: underline;
+    color: #4CAF50;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.profile-username {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.profile-details h3 {
+    margin-top: 0;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+.profile-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div id="nav" class="border">
+        <a class="MainIcon" href="index.html">小木匣</a>
+        <a class="MainIcon" href="discover.html">发现</a>
+        <a class="MainIcon" href="anykinds.html">分类</a>
+        <a class="MainIcon" href="plant.html">星球</a>
+        <a class="MainIcon" href="about.html">关于</a>
+        <a class="MainIcon" href="login.html">登录</a>
+        <a class="MainIcon active" href="profile.html">个人中心</a>
+        <a class="MainIcon" href="settings.html">设置</a>
+        <button id="toggle-mode">颜色模式切换</button>
+    </div>
+
+    <!-- 个人中心内容 -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="resources/pictures/user_avatar.jpg" alt="用户头像" class="profile-avatar">
+            <h2 class="profile-username">地球上的八十亿分之一</h2>
+        </div>
+        <div class="profile-details">
+            <h3>基本信息</h3>
+            <p>邮箱: 地球上的八十亿分之一@我也不知道啊.com</p>
+            <p>注册时间: 1145年19月19日</p>
+
+            <h3>我的活动</h3>
+            <p>帖子: 114514</p>
+            <p>评论: 1919810</p>
+
+            <h3>账号设置</h3>
+            <button class="profile-button" onclick="location.href='settings.html'">修改资料</button>
+            <button class="profile-button" onclick="location.href='index.html'">退出登录</button>
+        </div>
+    </div>
+        <!-- 页脚部分，版权声明 -->
+        <div id="footer" class="border">
+            <p>©2024 小木匣</p>
+        </div>
+        <script src="resources/javaScripts/toggle-mode.js"></script>
+</body>
+</html>

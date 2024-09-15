@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古诗晋级赛</title>
+    <link rel="shortcut icon" href="resources/pictures/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/toggle-mode.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏部分 -->
+    <div id="nav" class="border">
+        <div>
+            <div>
+                <!-- 网站logo图片 -->
+                <img id="logo" src="resources/pictures/icon.png" alt="小木匣——一个温馨的小世界">
+            </div>
+            <div>
+                <!-- 主导航链接 -->
+                <a class="MainIcon" href="index.html">小木匣</a>
+                <a class="MainIcon" href="discover.html">发现</a>
+                <a class="MainIcon" href="anykinds.html">分类</a>
+                <a class="MainIcon" href="planet.html">星球</a>
+            </div>
+        </div>
+        <!-- 搜索栏 -->
+        <form action="index.html" method="get">
+            <input type="text" placeholder="搜索你需要的东西..." name="q" aria-label="找到你需要的东西">
+            <button type="submit" id="search-btn">搜索</button>
+        </form>
+
+        <div>
+            <!-- 额外导航链接 -->
+            <a class="MainIcon" href="about.html">关于</a>
+            <a class="MainIcon" href="login.html">登录</a>
+            <a class="MainIcon" href="profile.html">个人中心</a>
+            <a class="MainIcon" href="settings.html">设置</a>
+            <button id="toggle-mode">颜色模式切换</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>古诗晋级赛</h1>
+            <p>欢迎参加小木匣的古诗晋级赛，让我们一起感受古诗词的魅力！</p>
+        </header>
+
+        <nav>
+            <a href="#introduction">活动简介</a>
+            <a href="#rules">活动细则</a>
+            <a href="#entries">参赛作品</a>
+        </nav>
+
+        <section id="introduction">
+            <h2>活动简介</h2>
+            <p>古诗晋级赛旨在弘扬中华传统文化，通过比赛形式让更多的人了解和喜爱古诗词。无论你是诗词爱好者还是新手，只要你有热情，都欢迎来参加。</p>
+        </section>
+
+        <section id="rules">
+            <h2>活动细则</h2>
+            <ul>
+                <li>凭自己的爱好，在生活中尝试诗词创作</li>
+            </ul>
+        </section>
+
+        <section id="entries">
+            <h2>参赛作品展示</h2>
+            <h3>作品一：春晓</h3>
+            <p>作者：孟浩然</p>
+            <br>
+            <p>春眠不觉晓，</p>
+            <p>处处闻啼鸟。</p>
+            <p>夜来风雨声，</p>
+            <p>花落知多少。</p>
+
+            <h3>作品二：静夜思</h3>
+            <p>作者：李白</p>
+            <br>
+            <p>床前明月光，</p>
+            <p>疑是地上霜。</p>
+            <p>举头望明月，</p>
+            <p>低头思故乡。</p>
+            <!-- 添加更多参赛作品 -->
+        </section>
+    </div>
+
+    <!-- 页脚部分，版权声明 -->
+    <div id="footer" class="border">
+        <p>©2024 小木匣</p>
+    </div>
+    <script src="resources/javaScripts/toggle-mode.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小木匣 - 分类</title>
+    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/toggle-mode.css">
+    <style>
+        h3{
+            border-color: orange red yellowgreen blue;
+            border-style: solid;
+            box-shadow: 5px 5px 8px #00000090;
+            margin: 20px;
+            border-top-width: 10px;
+            border-left-width: 10px;
+            border-bottom-width: 10px;
+            border-right-width: 10px;
+            text-decoration: none;
+        }
+        img{
+            border-color: orange red yellowgreen blue;
+            border-style: solid;
+            box-shadow: 5px 5px 8px #00000090;
+            margin: 20px;
+            border-top-width: 10px;
+            border-left-width: 10px;
+            border-bottom-width: 10px;
+            border-right-width: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏部分 -->
+    <div id="nav" class="border">
+        <div>
+            <!-- 网站logo图片 -->
+            <img id="logo" src="resources/pictures/icon.png" alt="小木匣——一个温馨的小世界">
+        </div>
+        <div>
+            <!-- 主导航链接 -->
+            <a class="MainIcon" href="index.html">小木匣</a>
+            <a class="MainIcon" href="discover.html">发现</a>
+            <a class="MainIcon" href="anykinds.html">分类</a>
+            <a class="MainIcon" href="plant.html">星球</a>
+        </div>
+        <!-- 搜索栏 -->
+        <form action="index.html" method="get">
+            <input type="text" placeholder="搜索你需要的东西..." name="q" aria-label="找到你需要的东西">
+            <button type="submit" id="search-btn">搜索</button>
+        </form>
+        <div>
+            <!-- 额外导航链接 -->
+            <a class="MainIcon" href="about.html">关于</a>
+            <a class="MainIcon" href="login.html">登录</a>
+            <a class="MainIcon" href="profile.html">个人中心</a>
+            <a class="MainIcon" href="settings.html">设置</a>
+            <button id="toggle-mode">颜色模式切换</button>
+        </div>
+    </div>
+
+    <!-- 分类页面内容 -->
+    <div class="content">
+        <h1>分类</h1>
+        <div class="categories">
+            <div class="category-card">
+                <img src="resources/pictures/category1.jpg" alt="飞行">
+                <h3><a href="flight.html">飞行</a></h3>
+            </div>
+            <div class="category-card">
+                <img src="resources/pictures/category2.jpg" alt="回忆">
+                <h3><a href="memories.html">回忆</a></h3>
+            </div>
+            <div class="category-card">
+                <img src="resources/pictures/category3.jpg" alt="美好">
+                <h3><a href="beauty.html">美好</a></h3>
+            </div>
+            <div class="category-card">
+                <img src="resources/pictures/category4.jpg" alt="自然">
+                <h3><a href="nature.html">自然</a></h3>
+            </div>
+            <div class="category-card">
+                <img src="resources/pictures/category5.jpg" alt="健康">
+                <h3><a href="health.html">健康</a></h3>
+            </div>
+            <div class="category-card">
+                <img src="resources/pictures/category6.jpg" alt="工作">
+                <h3><a href="work.html">工作</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚部分，版权声明 -->
+    <div id="footer" class="border">
+        <p>©2024 小木匣</p>
+    </div>
+    <script src="resources/javaScripts/toggle-mode.js"></script>
+</body>
+</html>
