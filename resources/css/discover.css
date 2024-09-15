@@ -1,0 +1,113 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+#nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.MainIcon {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a.MainIcon:hover, a.MainIcon.active {
+    text-decoration: underline;
+    color: #4CAF50;
+}
+
+.discover-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.discover-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.discover-section {
+    margin-bottom: 40px;
+}
+
+.discover-section h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.card {
+    display: flex;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0 0 10px 0;
+}
+
+.card-content p {
+    margin: 0;
+}
+
+#footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#footer p {
+    margin: 5px 0;
+}
+
+#footer a {
+    color: #4CAF50;
+}
+.discover-list{
+    list-style: none;
+    text-decoration: none;
+    color: #15d3d3;
+    font-size: 20px;
+}
+
+/* A的放大效果 */
+#a{
+    font-size: 26px;
+    transition: font-size 0.3s ease; 
+    /* 添加过渡效果 */
+}
+
+#a:hover{
+    font-size: 30px;
+}
+/* A的放大效果 */
